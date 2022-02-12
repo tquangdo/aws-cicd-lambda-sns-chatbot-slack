@@ -98,7 +98,10 @@ done
 
 
 # ~~~~~~~~~~~ 11) SNS ~~~~~~~~~~~
-aws sns delete-topic --topic-arn $(aws sns list-topics --query "Topics[?contains(TopicArn, 'dtq')].TopicArn" --output text)
+arr_topics=$(aws sns list-topics --query "Topics[?contains(TopicArn, 'dtq')].TopicArn" --output text)
+for item_topic in $arr_topics; do
+    aws sns delete-topic --topic-arn $item_topic
+done
 
 
 # ~~~~~~~~~~~ 12) Container ~~~~~~~~~~~
