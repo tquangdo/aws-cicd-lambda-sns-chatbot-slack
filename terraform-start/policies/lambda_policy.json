@@ -11,7 +11,7 @@
       "Sid": "2",
       "Effect": "Allow",
       "Action": "dynamodb:*",
-      "Resource": "arn:aws:dynamodb:us-east-1:462123133781:table/books"
+      "Resource": "arn:aws:dynamodb:us-east-1:<AWS_ACCID>:table/books"
     },
     {
       "Sid": "3",
