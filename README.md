@@ -101,7 +101,8 @@ output "base_url" {
 
 ## terraform
 ```shell
-terraform destroy -auto-approve
+terraform-start$ terraform destroy -auto-approve
+./del_aws_resource.sh
 ```
 
 
