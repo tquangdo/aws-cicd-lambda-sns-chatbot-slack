@@ -42,6 +42,7 @@ output "base_url" {
 ![sub2](screenshots/sub2.png)
 
 ## AWS Pipeline
+[cicd](https://docs.google.com/spreadsheets/d/1m8LuBQUzqIQ0bJYb3NJZOT4iSb78xUEG/edit#gid=1878281573&range=B7)
 - pipeline `staging`
 ![pline](screenshots/pline.png)
 - src stage: from `https://github.com/hoalongnatsu/codepipeline-list-function/tree/staging`
